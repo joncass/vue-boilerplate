@@ -18,9 +18,10 @@ Other useful scripts:
 ### Make it yours
 To make it yours:
 - Write your own `README.md`
-- Change the name, description, and author in `package.json`
+- Change the name, description, author, and version in `package.json`
 - Change the title in `src/build/config.js`
 - Replace the copyright in the `LICENSE`
+- Put your favicon at `static/favicon.ico`
 
 ## Contents
 What's in the box?
