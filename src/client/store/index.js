@@ -2,33 +2,15 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
+// My library
+import counter from './modules/counter'
+
 Vue.use(Vuex)
 
-const state = {
-  count: 0,
-}
-
-export const mutations = {
-  INCREMENT (state) {
-    state.count++
-  },
-  DECREMENT (state) {
-    state.count--
-  },
-}
-
-export const actions = {
-  incrementAsync ({ commit }) {
-    setTimeout(() => {
-      commit('INCREMENT')
-    }, 200)
-  },
-}
-
 const store = new Vuex.Store({
-  state,
-  mutations,
-  actions,
+  modules: {
+    counter,
+  },
 })
 
 export default store
