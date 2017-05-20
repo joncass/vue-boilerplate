@@ -11,7 +11,7 @@
     "dev": "node src/build/server.js",
     "lint": "eslint ./src && echo ESLINT: Congratulations! You are lint-free!",
     "unit": "jest --verbose",
-    "unit:components": "jest --verbose src/client/components",
+    "unit:comps": "jest --verbose src/client/components",
     "unit:store": "jest --verbose src/client/store",
     "unit:views": "jest --verbose src/client/views",
     "e2e": "echo End-to-end tests have not been configured!"

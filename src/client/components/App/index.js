@@ -9,7 +9,7 @@ export default {
     return (
       <div id='app' class='page'>
         <NavBar />
-        <router-view></router-view>
+        <router-view />
       </div>
     )
   },
