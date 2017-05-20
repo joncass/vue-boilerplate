@@ -1,11 +1,11 @@
 export default {
   render () {
     return (
-      <p>
+      <div class='__container__component__-nav-bar'>
         <router-link to='/'>Home</router-link>
         ...
         <router-link to='/about'>About</router-link>
-      </p>
+      </div>
     )
   },
 }

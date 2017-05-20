@@ -14,7 +14,7 @@ export default {
   },
   render () {
     return (
-      <div>
+      <div class='__container__component__-counter'>
         <div class={style.counter}>
           {this.$store.state.counter.count}
         </div>
