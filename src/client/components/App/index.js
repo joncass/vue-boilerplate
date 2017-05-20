@@ -1,15 +1,14 @@
 // Global styles
 import './style.css'
 
+// My library
+import NavBar from '../NavBar'
+
 export default {
   render () {
     return (
       <div id='app' class='page'>
-        <p>
-          <router-link to='/'>Home</router-link>
-          ...
-          <router-link to='/about'>About</router-link>
-        </p>
+        <NavBar />
         <router-view></router-view>
       </div>
     )
