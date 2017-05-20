@@ -3,19 +3,9 @@ import Vue from 'vue'
 
 // My library
 import About from './'
-import store from '../../store'
+import wrapper from '../../../test/wrapper'
 
-const aboutWrapper = new Vue({
-  store,
-  components: {
-    injection: About,
-  },
-  render () {
-    return (
-      <div><injection></injection></div>
-    )
-  },
-}).$mount()
+const aboutWrapper = wrapper(About)
 
 describe('The about page', () => {
   it('recommends editing ./src/client', (done) => {

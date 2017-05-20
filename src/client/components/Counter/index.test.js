@@ -4,18 +4,9 @@ import Vue from 'vue'
 // My library
 import Counter from './'
 import store from '../../store'
+import wrapper from '../../../test/wrapper'
 
-const counterWrapper = new Vue({
-  store,
-  components: {
-    injection: Counter,
-  },
-  render () {
-    return (
-      <div><injection></injection></div>
-    )
-  },
-}).$mount()
+const counterWrapper = wrapper(Counter)
 
 const counterClass = '.__container__component__-counter'
 

@@ -3,19 +3,9 @@ import Vue from 'vue'
 
 // My library
 import Home from './'
-import store from '../../store'
+import wrapper from '../../../test/wrapper'
 
-const homeWrapper = new Vue({
-  store,
-  components: {
-    injection: Home,
-  },
-  render () {
-    return (
-      <div><injection></injection></div>
-    )
-  },
-}).$mount()
+const homeWrapper = wrapper(Home)
 
 describe('The home page', () => {
   it('has only one child', (done) => {

@@ -13,7 +13,7 @@ const myApp = new Constructor({
 }).$mount()
 
 describe('the app component', () => {
-  it('should have the correct root properties', done => {
+  it('should have the correct root properties', (done) => {
     Vue.nextTick(() => {
       expect(myApp.$el.className).toBe('page')
       expect(myApp.$el.id).toBe('app')
@@ -22,7 +22,7 @@ describe('the app component', () => {
   })
 
   const navBarClass = '.__container__component__-nav-bar'
-  it('should contain a nav bar', done => {
+  it('should contain a nav bar', (done) => {
     Vue.nextTick(() => {
       const $navBar = myApp.$el.querySelector(navBarClass)
       expect($navBar).toBeTruthy()
@@ -30,7 +30,7 @@ describe('the app component', () => {
     })
   })
 
-  it('should contain the stubbed comp at the default route', done => {
+  it('should contain the stubbed comp at the default route', (done) => {
     Vue.nextTick(() => {
       expect(myApp.$el.querySelector('#test-component')).toBeTruthy()
       done()
