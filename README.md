@@ -12,7 +12,7 @@ To get started:
 then visit `localhost:4000` in your browser.
 
 Other useful scripts:
-- `yarn lint` - Run the linter.
+- `yarn test` - Run all tests (linting, unit, end-to-end).
 
 ## Contents
 What's in the box?

@@ -8,7 +8,7 @@ const state = {
   count: 0,
 }
 
-const mutations = {
+export const mutations = {
   INCREMENT (state) {
     state.count++
   },
@@ -17,7 +17,7 @@ const mutations = {
   },
 }
 
-const actions = {
+export const actions = {
   incrementAsync ({ commit }) {
     setTimeout(() => {
       commit('INCREMENT')

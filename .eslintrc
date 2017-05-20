@@ -9,6 +9,10 @@
     "browser"
   ],
   "globals": {
-    "location": true
+    "location": true,
+    # Jest
+    "describe": true,
+    "it": true,
+    "expect": true
   }
 }
