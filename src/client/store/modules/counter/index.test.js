@@ -1,4 +1,4 @@
-import store from './index'
+import store from './'
 
 describe('the counter', () => {
   it('should have the correct initial state', () => {
