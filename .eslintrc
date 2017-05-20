@@ -1,0 +1,13 @@
+{
+  "extends": "vue",
+  "rules": {
+    "comma-dangle": ["error", "always-multiline"],
+    "max-len": [2, 80, 2]
+  },
+  "envs": [
+    "browser"
+  ],
+  "globals": {
+    "location": true
+  }
+}
