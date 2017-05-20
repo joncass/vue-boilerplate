@@ -12,7 +12,7 @@ export default {
       this.$store.dispatch('incrementAsync')
     },
   },
-  render (h) {
+  render () {
     return (
       <div>
         <div class={style.counter}>

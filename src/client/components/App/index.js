@@ -2,7 +2,7 @@
 import './style.css'
 
 export default {
-  render (h) {
+  render () {
     return (
       <div id='app'>
         <router-view></router-view>

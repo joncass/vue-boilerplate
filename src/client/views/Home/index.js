@@ -1,7 +1,7 @@
 import Counter from 'components/Counter'
 
 export default {
-  render (h) {
+  render () {
     return (
       <div class='page'>
         <Counter />
