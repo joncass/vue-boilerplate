@@ -3,6 +3,7 @@
 Boilerplate for a Vue app.
 
 ## Usage
+### Get started
 To get started:
 ```
   git clone https://github.com/joncass/vue-boilerplate
@@ -14,14 +15,30 @@ then visit `localhost:4000` in your browser.
 Other useful scripts:
 - `yarn test` - Run all tests (linting, unit, end-to-end).
 
+### Make it yours
+To make it yours:
+- Write your own `README.md`
+- Change the name, description, and author in `package.json`
+- Change the title in `src/build/config.js`
+- Replace the copyright in the `LICENSE`
+
 ## Contents
 What's in the box?
+### Functionality
 - Vue
 - Vuex
 - Vue-Router
+
+### Testing
+- ESLint
+- Jest
+
+### Utility
+- Babel
+- Webpack
 
 ## Contributing
 Questions, comments, suggestions, pull requests, etc are welcome!
 
 ## License
-Licensed under the MIT license. Feel free to replace the copyright with your own, but leave the license as-is.
+Licensed under the MIT license.
