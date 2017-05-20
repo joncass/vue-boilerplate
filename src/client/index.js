@@ -1,3 +1,4 @@
+// My library
 import { app } from './app'
 
 // Enable progressive web app support (with offline-plugin)
