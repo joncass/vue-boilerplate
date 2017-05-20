@@ -11,18 +11,14 @@ const _ = require('./utils')
 const config = require('./config')
 
 if (config.electron) {
-  // remove dist folder in electron mode
   exec('rm -rf app/assets/')
 } else {
-  // remove dist folder in web app mode
   exec('rm -rf dist/')
-  // use source-map in web app mode
   base.devtool = 'source-map'
 }
 
 // use hash filename to support long-term caching
 base.output.filename = '[name].[chunkhash:8].js'
-// add webpack plugins
 base.plugins.push(
   new ProgressPlugin(),
   new ExtractTextPlugin('styles.[contenthash:8].css'),
@@ -51,7 +47,6 @@ base.plugins.push(
     name: 'manifest',
   }),
   // progressive web app
-  // it uses the publicPath in webpack config
   new OfflinePlugin({
     relativePaths: false,
     AppCache: false,
@@ -80,11 +75,8 @@ _.cssProcessors.forEach(processor => {
 
 // minimize webpack output
 base.stats = {
-  // Add children information
   children: false,
-  // Add chunk information (setting  to `false` allows for less verbose output)
   chunks: false,
-  // Add built modules information to chunk information
   chunkModules: false,
   chunkOrigins: false,
   modules: false,
