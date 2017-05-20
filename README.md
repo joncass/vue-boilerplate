@@ -2,6 +2,8 @@
 ## Synopsis
 Boilerplate for a Vue app.
 
+There are lots of boilerplate projects out there. I find that they are usually either too thin for what I want or have too much clutter. Here I attempt to strike a balance between those two extremes. Note that this project is intentionally bereft of styling. I recommend finding a component library to use with your project.
+
 ## Usage
 ### Get started
 To get started:
